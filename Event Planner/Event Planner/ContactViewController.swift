@@ -1,0 +1,35 @@
+//
+//  ContactViewController.swift
+//  Event Planner
+//
+//  Created by ARUN KUMAR YADAV on 29/04/25.
+//
+
+import UIKit
+
+class ContactViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func homebtn(_ sender: Any) {
+        if let loginSignupVC = storyboard?.instantiateViewController(withIdentifier: "HomePageViewController") {
+                loginSignupVC.modalPresentationStyle = .fullScreen
+                present(loginSignupVC, animated: true, completion: nil)
+            }
+    }
+    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
